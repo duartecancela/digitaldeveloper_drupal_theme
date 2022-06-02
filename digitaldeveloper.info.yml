@@ -7,6 +7,11 @@ libraries:
 base theme: classy
 regions:
   header: 'Header'
+  primary_menu: 'Primary enu'
+  secondary_menu: 'Secondary menu'
+  breadcrumb: 'Breadcrumb'
+  highlighted: 'Highlighted'
+  help: 'Help'
   content: 'Content'
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
