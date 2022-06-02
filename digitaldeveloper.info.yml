@@ -7,7 +7,7 @@ libraries:
 base theme: classy
 regions:
   header: 'Header'
-  primary_menu: 'Primary enu'
+  primary_menu: 'Primary menu'
   secondary_menu: 'Secondary menu'
   breadcrumb: 'Breadcrumb'
   highlighted: 'Highlighted'

@@ -42,46 +42,153 @@
  * @see html.html.twig
  */
 #}
-<div class="layout-container">
 
-  <header role="banner">
-    {{ page.header }}
-  </header>
+  <!-- Document Wrapper
+	============================================= -->
+<div id="wrapper" class="clearfix">
 
-  {{ page.primary_menu }}
-  {{ page.secondary_menu }}
+    <!-- Header
+		============================================= -->
 
-  {{ page.breadcrumb }}
+    <header role="banner" id="header" class="header-size-sm">
+      {{ page.header }}
+    </header>
 
-  {{ page.highlighted }}
+    {{ page.primary_menu }}
+    {{ page.secondary_menu }}
 
-  {{ page.help }}
+    {{ page.breadcrumb }}
 
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+    {{ page.highlighted }}
 
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
+    {{ page.help }}
 
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
+    <main role="main">
+      <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
+       <!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
 
-  </main>
+				<a href="#" class="button button-full button-purple center text-end header-stick bottommargin-lg">
+					<div class="container clearfix">
+						Canvas comes with Unlimited Customizations &amp; Options. <strong>Check Out</strong> <i class="icon-caret-right" style="top:4px;"></i>
+					</div>
+				</a>
 
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
+				<div class="container clearfix">
 
-</div>{# /.layout-container #}
+					<div class="heading-block center">
+						<h1>Recent Articles</h1>
+						<span>We almost blog regularly about this &amp; that.</span>
+					</div>
+
+					 {{ page.content }}
+
+					<!-- Pager
+					============================================= -->
+					<div class="d-flex justify-content-between mt-5">
+						<a href="#" class="btn btn-outline-secondary">&larr; Older</a>
+						<a href="#" class="btn btn-outline-dark">Newer &rarr;</a>
+					</div>
+					<!-- .pager end -->
+
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+      {% if page.sidebar_first %}
+        <aside class="layout-sidebar-first" role="complementary">
+          {{ page.sidebar_first }}
+        </aside>
+      {% endif %}
+
+      {% if page.sidebar_second %}
+        <aside class="layout-sidebar-second" role="complementary">
+          {{ page.sidebar_second }}
+        </aside>
+      {% endif %}
+
+    </main>
+
+    <footer id="footer" class="dark">
+			<div class="container">
+        <!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap">
+          {% if page.footer %}
+            <footer role="contentinfo">
+              {{ page.footer }}
+            </footer>
+          {% endif %}
+        </div><!-- .footer-widgets-wrap end -->
+      </div>
+      <!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+				<div class="container">
+
+					<div class="row col-mb-30">
+
+						<div class="col-md-6 text-center text-md-start">
+							Copyrights &copy; 2020 All Rights Reserved by Canvas Inc.<br>
+							<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+						</div>
+
+						<div class="col-md-6 text-center text-md-end">
+							<div class="d-flex justify-content-center justify-content-md-end">
+								<a href="#" class="social-icon si-small si-borderless si-facebook">
+									<i class="icon-facebook"></i>
+									<i class="icon-facebook"></i>
+								</a>
+
+								<a href="#" class="social-icon si-small si-borderless si-twitter">
+									<i class="icon-twitter"></i>
+									<i class="icon-twitter"></i>
+								</a>
+
+								<a href="#" class="social-icon si-small si-borderless si-gplus">
+									<i class="icon-gplus"></i>
+									<i class="icon-gplus"></i>
+								</a>
+
+								<a href="#" class="social-icon si-small si-borderless si-pinterest">
+									<i class="icon-pinterest"></i>
+									<i class="icon-pinterest"></i>
+								</a>
+
+								<a href="#" class="social-icon si-small si-borderless si-vimeo">
+									<i class="icon-vimeo"></i>
+									<i class="icon-vimeo"></i>
+								</a>
+
+								<a href="#" class="social-icon si-small si-borderless si-github">
+									<i class="icon-github"></i>
+									<i class="icon-github"></i>
+								</a>
+
+								<a href="#" class="social-icon si-small si-borderless si-yahoo">
+									<i class="icon-yahoo"></i>
+									<i class="icon-yahoo"></i>
+								</a>
+
+								<a href="#" class="social-icon si-small si-borderless si-linkedin">
+									<i class="icon-linkedin"></i>
+									<i class="icon-linkedin"></i>
+								</a>
+							</div>
+
+							<div class="clear"></div>
+
+							<i class="icon-envelope2"></i> info@canvas.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +1-11-6541-6369 <span class="middot">&middot;</span> <i class="icon-skype2"></i> CanvasOnSkype
+						</div>
+					</div>
+				</div>
+			</div><!-- #copyrights end -->
+    </div><!-- #footer end -->
+</div><!-- #wrapper end -->
+
+ 
+
+
