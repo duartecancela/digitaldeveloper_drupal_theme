@@ -2,9 +2,12 @@ name: digitaldeveloper.dev
 type: theme
 description: 'digitaldeveloper.dev Drupal theme.'
 core_version_requirement: ^8 || ^9
+
 libraries:
   - digitaldeveloper/global-styling
+
 base theme: classy
+
 regions:
   header: 'Header'
   primary_menu: 'Primary menu'
